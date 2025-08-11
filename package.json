@@ -1,0 +1,33 @@
+{
+  "name": "samridhi-nagar-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Samridhi Nagar - Marketing Executive",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "preview": "open index.html",
+    "deploy": "netlify deploy --prod --dir=.",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "marketing",
+    "website",
+    "samridhi-nagar",
+    "geeksforgeeks",
+    "digital-marketing"
+  ],
+  "author": "Samridhi Nagar <Samradhingr@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://samridhi-nagar-portfolio.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samridhi-nagar/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samridhi-nagar/portfolio/issues"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
