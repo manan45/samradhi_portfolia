@@ -3,299 +3,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samridhi Nagar - Marketing Executive</title>
+    <title>Samridhi Nagar — Marketing Professional</title>
+    <meta name="description" content="Marketing professional with 6 years of experience in Social Media Management, Digital Marketing, and Strategic Campaign Execution based in Abu Dhabi, UAE.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">SAMRIDHI NAGAR</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">Story</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Connect</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <!-- Floating Glass Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-pill">
+            <a href="#home" class="nav-link active" data-section="home">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span class="nav-label">About</span>
+            </a>
+            <a href="#services" class="nav-link" data-section="services">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                <span class="nav-label">Services</span>
+            </a>
+            <a href="#portfolio" class="nav-link" data-section="portfolio">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                <span class="nav-label">Work</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span class="nav-label">Contact</span>
+            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <!-- ====== HERO ====== -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Samridhi<br>
-                    <span class="gradient-text">Nagar</span><br>
-                    Marketing Executive
+                <h1 class="hero-title reveal">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Samridhi <span class="accent-text">Nagar</span></span>
                 </h1>
-                <p class="hero-description">
-                    Performance marketing specialist with proven ability to scale digital presence. 
-                    Grew LinkedIn to 13K followers & YouTube to 62K subscribers organically in 5 months at GeeksforGeeks.
-                </p>
-                <div class="hero-cta">
-                                            <button class="btn-primary">
-                            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; margin-right: 8px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;">
-                                <path d="M8 2v4"/>
-                                <path d="M16 2v4"/>
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                                <path d="M3 10h18"/>
-                                <path d="M8 14h.01"/>
-                                <path d="M12 14h.01"/>
-                                <path d="M16 14h.01"/>
-                                <path d="M8 18h.01"/>
-                                <path d="M12 18h.01"/>
-                            </svg>
-                            Explore My Work
-                        </button>
-                        <button class="btn-secondary">
-                            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; margin-right: 8px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7,10 12,15 17,10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
-                            </svg>
-                            Download Resume
-                        </button>
+                <p class="hero-role reveal" style="--delay:.1s">Marketing Professional — Social Media, Digital Strategy & Growth</p>
+                <p class="hero-tagline reveal" style="--delay:.15s">Turning campaigns into conversations — 6 years of experience scaling digital presence, building communities, and driving measurable growth across platforms.</p>
+                <div class="hero-cta reveal" style="--delay:.25s">
+                    <a href="#portfolio" class="btn btn-primary">
+                        Explore My Work
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+                    </a>
+                    <a href="data/Samradhi Resume 2026.pdf" download class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Resume
+                    </a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-content">
-                        <span class="card-metric">62K</span>
-                        <span class="card-label">YouTube Subscribers</span>
-                    </div>
+            <div class="hero-photo reveal" style="--delay:.2s">
+                <img src="data/main_profile.jpeg" alt="Samridhi Nagar" width="320" height="320">
+            </div>
+            <div class="hero-badges reveal" style="--delay:.35s">
+                <div class="stat-badge">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
-                <div class="floating-card card-2">
-                    <div class="card-content">
-                        <span class="card-metric">13K</span>
-                        <span class="card-label">LinkedIn Followers</span>
-                    </div>
+                <div class="stat-badge">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Subscribers Driven</span>
                 </div>
-                <div class="floating-card card-3">
-                    <div class="card-content">
-                        <span class="card-metric">70%</span>
-                        <span class="card-label">CAC Reduction</span>
-                    </div>
+                <div class="stat-badge">
+                    <span class="stat-number">60K+</span>
+                    <span class="stat-label">App Users Grown</span>
                 </div>
-                <div class="hero-orb"></div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator reveal" style="--delay:.5s">
             <span>Scroll to explore</span>
-            <div class="scroll-arrow"></div>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 1l3 6 6 .75-4.12 4.62L18 19l-6-3-6 3 1.12-6.63L3 7.75 9 7l3-6z"/>
-                    </svg>
-                    My Journey
-                </span>
-                <h2 class="section-title">The Story Behind<br>the Strategy</h2>
+                <span class="section-badge reveal">About Me</span>
+                <h2 class="section-title reveal" style="--delay:.1s">The Story Behind<br>the <span class="accent-text">Strategy</span></h2>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="story-block">
-                        <h3>The Foundation (2019-2020)</h3>
-                        <p>Started my marketing journey during MBA at Graphic Era University. Led government projects on Smart City Dehradun and crime rate analysis, building analytical foundations that would shape my data-driven approach.</p>
+            <div class="about-layout">
+                <div class="about-bio glass-card reveal" style="--delay:.2s">
+                    <div class="about-photo-wrap">
+                        <img src="data/another_profile_picture.jpeg" alt="Samridhi Nagar in Dubai" class="about-photo" loading="lazy">
                     </div>
-                    <div class="story-block">
-                        <h3>The Growth (2020-2023)</h3>
-                        <p>From Creatikartta to Leverage Edu, I scaled communities from 10K to 60K+ users, managed 50+ influencers, and achieved 70% CAC reduction through organic engagement strategies.</p>
+                    <p class="bio-text">Marketing professional with nearly 6 years of experience specializing in Social Media Management, Digital Marketing, and Strategic Campaign Execution. Proficient in Google Analytics 4, Tableau, Power BI, and advanced MS Excel. Specialized in end-to-end YouTube and LinkedIn management, with hands-on expertise in ad shoots, podcast creation, scriptwriting & high-impact digital campaigns.</p>
+                    <div class="bio-details">
+                        <div class="bio-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Abu Dhabi, UAE
+                        </div>
+                        <div class="bio-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><polyline points="22,6 12,13 2,6"/></svg>
+                            samradhingr@gmail.com
+                        </div>
+                        <div class="bio-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            MBA — Finance & Marketing
+                        </div>
                     </div>
-                    <div class="story-block">
-                        <h3>The Impact (2023-Present)</h3>
-                        <p>At GeeksforGeeks, I've revolutionized digital marketing by growing channels from scratch—13K LinkedIn followers and 62K YouTube subscribers in just 5 months, plus contributing to 1M+ subscriber milestone.</p>
+                    <div class="bio-badges">
+                        <span class="pill-badge">Google Analytics 4</span>
+                        <span class="pill-badge">Tableau</span>
+                        <span class="pill-badge">Power BI</span>
+                        <span class="pill-badge">Advanced Excel</span>
+                        <span class="pill-badge">English</span>
+                        <span class="pill-badge">Hindi</span>
+                        <span class="pill-badge">Gujarati</span>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-year">2020</div>
-                            <div class="timeline-event">Marketing Associate at Creatikartta</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2021</div>
-                            <div class="timeline-event">Sr. Associate at Leverage Edu</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2023</div>
-                            <div class="timeline-event">Marketing Executive at GeeksforGeeks</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024</div>
-                            <div class="timeline-event">Digital Marketing Certification (ISB)</div>
-                        </div>
+                <div class="about-timeline">
+                    <div class="timeline-item glass-card reveal" style="--delay:.25s">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">Sep 2025 — Feb 2026</span>
+                        <h3>Social Media Specialist</h3>
+                        <span class="timeline-company">Fateh Education · New Delhi</span>
+                        <p>Directed lifecycle management of Instagram & YouTube. Formulated data-backed marketing plans. Contributed to cross-border marketing for Dubai.</p>
+                    </div>
+                    <div class="timeline-item glass-card reveal" style="--delay:.3s">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">Apr 2023 — Sep 2025</span>
+                        <h3>Marketing Executive</h3>
+                        <span class="timeline-company">GeeksforGeeks · Noida</span>
+                        <p>Built GATE ecosystem from zero — 13K LinkedIn followers, 62K YouTube subscribers in 5 months. Drove Sandeep Jain's Tech channel to 1M+ subscribers. Launched podcasts boosting engagement 30%.</p>
+                    </div>
+                    <div class="timeline-item glass-card reveal" style="--delay:.35s">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">Jun 2021 — Mar 2023</span>
+                        <h3>Sr. Associate — Community & Outreach</h3>
+                        <span class="timeline-company">Leverage Edu · Noida</span>
+                        <p>Partnered with 50+ creators. Reduced CAC by 70% via organic community building. Delivered 30+ events with 1.5K+ participants each. Scaled app users from 10K to 60K+.</p>
+                    </div>
+                    <div class="timeline-item glass-card reveal" style="--delay:.4s">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">May 2020 — Apr 2021</span>
+                        <h3>Marketing Associate</h3>
+                        <span class="timeline-company">Creatikartta · Dehradun</span>
+                        <p>Crafted pitch decks for 40+ brands. Managed 20+ freelancers. Directed creator campaigns with 200K+ cumulative views.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4"/>
-                        <circle cx="12" cy="12" r="10"/>
-                    </svg>
-                    Expertise
-                </span>
-                <h2 class="section-title">Skills That Drive<br>Results</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <svg viewBox="0 0 24 24">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                            <line x1="12" y1="18" x2="12.01" y2="18"/>
-                        </svg>
+            <div class="about-certs reveal" style="--delay:.45s">
+                <div class="cert-item cert-item-featured glass-card">
+                    <img src="data/digital_marketing_certificatejpeg" alt="ISB Digital Marketing and Analytics Certificate" class="cert-image" loading="lazy">
+                    <div class="cert-info">
+                        <span class="cert-year">2024</span>
+                        <span class="cert-name">Digital Marketing & Analytics — ISB</span>
                     </div>
-                    <h3>Social Media Growth</h3>
-                    <ul>
-                        <li>LinkedIn Community Building (13K followers)</li>
-                        <li>YouTube Channel Management (62K subscribers)</li>
-                        <li>Organic Growth Strategies</li>
-                        <li>Influencer Management (50+ influencers)</li>
-                    </ul>
                 </div>
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="6"/>
-                            <circle cx="12" cy="12" r="2"/>
-                        </svg>
+                <div class="cert-item cert-item-placeholder glass-card">
+                    <div class="cert-placeholder" style="--cert-hue:160">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                        <span class="cert-placeholder-org">GrowthSchool</span>
+                        <span class="cert-placeholder-title">Advertising &<br>Marcom Mastery</span>
                     </div>
-                    <h3>Performance Marketing</h3>
-                    <ul>
-                        <li>CAC Reduction (70% improvement)</li>
-                        <li>Google & Display Ads</li>
-                        <li>Conversion Optimization (15% increase)</li>
-                        <li>Community Engagement</li>
-                    </ul>
+                    <div class="cert-info">
+                        <span class="cert-year">2023</span>
+                        <span class="cert-name">Advertising & Marcom — GrowthSchool</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <svg viewBox="0 0 24 24">
-                            <line x1="18" y1="20" x2="18" y2="10"/>
-                            <line x1="12" y1="20" x2="12" y2="4"/>
-                            <line x1="6" y1="20" x2="6" y2="14"/>
-                        </svg>
+                <div class="cert-item cert-item-placeholder glass-card">
+                    <div class="cert-placeholder" style="--cert-hue:280">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        <span class="cert-placeholder-org">IIDE</span>
+                        <span class="cert-placeholder-title">Podcast<br>Marketing</span>
                     </div>
-                    <h3>Content & Strategy</h3>
-                    <ul>
-                        <li>Content Strategy Development</li>
-                        <li>Copywriting & Ad Copy</li>
-                        <li>Brand Storytelling</li>
-                        <li>Marketing Pitch Creation</li>
-                    </ul>
+                    <div class="cert-info">
+                        <span class="cert-year">2022</span>
+                        <span class="cert-name">Podcast Marketing — IIDE</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2l2.09 6.26L20 9l-5.91.74L12 16l-2.09-6.26L4 9l5.91-.74L12 2z"/>
-                            <path d="M12 16v6"/>
-                            <path d="M9 19h6"/>
-                        </svg>
+                <div class="cert-item cert-item-placeholder glass-card">
+                    <div class="cert-placeholder" style="--cert-hue:30">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                        <span class="cert-placeholder-org">Graphic Era University</span>
+                        <span class="cert-placeholder-title">MBA Finance<br>& Marketing</span>
                     </div>
-                    <h3>Project Leadership</h3>
-                    <ul>
-                        <li>Team Management (20+ freelancers)</li>
-                        <li>Campaign Execution (30+ events)</li>
-                        <li>Cross-platform Marketing</li>
-                        <li>Government Project Leadership</li>
-                    </ul>
+                    <div class="cert-info">
+                        <span class="cert-year">2021</span>
+                        <span class="cert-name">MBA Finance & Marketing — Graphic Era</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- ====== SERVICES ====== -->
+    <section id="services" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">
-                    <svg viewBox="0 0 24 24">
-                        <line x1="8" y1="6" x2="21" y2="6"/>
-                        <line x1="8" y1="12" x2="21" y2="12"/>
-                        <line x1="8" y1="18" x2="21" y2="18"/>
-                        <line x1="3" y1="6" x2="3.01" y2="6"/>
-                        <line x1="3" y1="12" x2="3.01" y2="12"/>
-                        <line x1="3" y1="18" x2="3.01" y2="18"/>
-                    </svg>
-                    Case Studies
-                </span>
-                <h2 class="section-title">Campaigns That<br><span class="gradient-text">Made Impact</span></h2>
-                <p class="section-subtitle">Real results from proven marketing strategies that delivered measurable growth</p>
+                <span class="section-badge reveal">What I Do</span>
+                <h2 class="section-title reveal" style="--delay:.1s">Services That<br>Drive <span class="accent-text">Results</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card reveal" style="--delay:.15s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>End-to-end management of YouTube, Instagram, LinkedIn & Quora — from content calendars to analytics-driven optimization.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="--delay:.2s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Scaled communities from 10K to 60K+ users through organic engagement strategies, mentorship playbooks, and outreach partnerships.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="--delay:.25s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h3>Content Strategy & Scriptwriting</h3>
+                    <p>Data-backed content strategies, brand storytelling, podcast scripts, and campaign copywriting that converts audiences into customers.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="--delay:.3s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23,7 16,12 23,17 23,7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    </div>
+                    <h3>Video Ads & Podcast Management</h3>
+                    <p>Ad shoots, podcast creation, branded reels & video campaigns. Refined ad creatives with 15% conversion uplift.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="--delay:.35s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/><polyline points="17,6 23,6 23,12"/></svg>
+                    </div>
+                    <h3>Influencer Marketing</h3>
+                    <p>Managed 50+ influencers across cities. Creator collaborations, branded content partnerships, and performance-driven influencer campaigns.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="--delay:.4s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3>Event Management & Webinars</h3>
+                    <p>30+ events and webinars delivered with 1.5K+ average participants. End-to-end planning, promotion, and post-event engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PORTFOLIO ====== -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge reveal">My Work</span>
+                <h2 class="section-title reveal" style="--delay:.1s">Campaigns That<br>Made <span class="accent-text">Impact</span></h2>
+                <p class="section-subtitle reveal" style="--delay:.15s">Real results from proven marketing strategies — click any YouTube card to watch inline</p>
+            </div>
+            <div class="portfolio-filters reveal" style="--delay:.2s">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="video-ads">Video Ads</button>
+                <button class="filter-btn" data-filter="product-launch">Launches</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="personal">Personal Brand</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">GeeksforGeeks Growth</div>
+
+                <!-- ── YouTube Longform ── -->
+                <div class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="cC8MjoYGedk">
+                            <img src="https://img.youtube.com/vi/cC8MjoYGedk/maxresdefault.jpg" alt="GATE Course Ecosystem Launch" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h3>YouTube Channel Scaling</h3>
-                        <p>Grew GeeksforGeeks YouTube channels from scratch to 62K subscribers organically in just 5 months</p>
-                        <div class="portfolio-metrics">
-                            <span>62K Subscribers</span>
-                            <span>5 Months</span>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">YouTube</span>
+                        <h3>GATE Course Ecosystem Launch</h3>
+                        <p>Built GATE course ecosystem from zero via LinkedIn, YouTube & Telegram</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="y5sN2D4Zkmo">
+                            <img src="https://img.youtube.com/vi/y5sN2D4Zkmo/maxresdefault.jpg" alt="Digital Marketing Strategy" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">YouTube</span>
+                        <h3>Digital Marketing Strategy</h3>
+                        <p>Data-backed marketing plan & campaign execution walkthrough</p>
+                    </div>
+                </div>
+
+                <!-- ── YouTube Shorts ── -->
+                <div class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="tiFIf_nUCZc">
+                            <img src="https://img.youtube.com/vi/tiFIf_nUCZc/maxresdefault.jpg" alt="Quick Growth Hack" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Short</span>
+                        <h3>Quick Growth Hack</h3>
+                        <p>60-second marketing growth tip</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="wn0btNJ65ws">
+                            <img src="https://img.youtube.com/vi/wn0btNJ65ws/maxresdefault.jpg" alt="Marketing in 60 Seconds" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Short</span>
+                        <h3>Marketing in 60 Seconds</h3>
+                        <p>Quick-fire marketing insight short</p>
+                    </div>
+                </div>
+
+                <!-- ── YouTube Channels ── -->
+                <a href="https://www.youtube.com/@GeeksforGeeksVideos/featured" target="_blank" rel="noopener" aria-label="Visit GeeksforGeeks Videos YouTube Channel" class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media platform-preview platform-youtube">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span class="platform-label">YouTube Channel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Channel</span>
+                        <h3>GeeksforGeeks Videos</h3>
+                        <p>Main GfG educational content channel</p>
+                        <span class="card-cta">Visit Channel →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@SandeepJainGfG" target="_blank" rel="noopener" aria-label="Visit Sandeep Jain's Tech YouTube Channel" class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media platform-preview platform-youtube">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span class="platform-label">YouTube Channel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Channel</span>
+                        <h3>Sandeep Jain's Tech — 1M+</h3>
+                        <p>Drove channel to 1M+ subscribers & Golden Play Button</p>
+                        <span class="card-cta">Visit Channel →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@GfG_GATE" target="_blank" rel="noopener" aria-label="Visit GfG GATE YouTube Channel" class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media platform-preview platform-youtube">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span class="platform-label">YouTube Channel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Channel</span>
+                        <h3>GfG GATE — 62K Organic</h3>
+                        <p>Achieved 62K subscribers organically in 5 months</p>
+                        <span class="card-cta">Visit Channel →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@TechnicalSuneja" target="_blank" rel="noopener" aria-label="Visit Technical Suneja YouTube Channel" class="portfolio-card glass-card reveal" data-category="youtube">
+                    <div class="card-media platform-preview platform-youtube">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span class="platform-label">YouTube Channel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-youtube">Channel</span>
+                        <h3>Technical Suneja</h3>
+                        <p>Managed influencer YouTube presence & content strategy</p>
+                        <span class="card-cta">Visit Channel →</span>
+                    </div>
+                </a>
+
+                <!-- ── Video Ads ── -->
+                <div class="portfolio-card glass-card reveal" data-category="video-ads">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="-R64PWJPf2k">
+                            <img src="https://img.youtube.com/vi/-R64PWJPf2k/maxresdefault.jpg" alt="Brand Campaign Ad" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-ads">Video Ad</span>
+                        <h3>GfG Brand Campaign</h3>
+                        <p>High-impact video advertisement for brand awareness</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-card reveal" data-category="video-ads">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="hDfjzq9m5vI">
+                            <img src="https://img.youtube.com/vi/hDfjzq9m5vI/maxresdefault.jpg" alt="Performance Ad Creative" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-ads">Video Ad</span>
+                        <h3>Performance Ad Creative</h3>
+                        <p>Refined ad creative delivering 15% conversion uplift</p>
+                    </div>
+                </div>
+
+                <!-- ── Product Launch ── -->
+                <div class="portfolio-card glass-card reveal" data-category="product-launch">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="xBLTmQmAvz0">
+                            <img src="https://img.youtube.com/vi/xBLTmQmAvz0/maxresdefault.jpg" alt="Product Launch Campaign" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-launch">Launch</span>
+                        <h3>Product Launch Campaign</h3>
+                        <p>End-to-end product launch video strategy</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-card reveal" data-category="product-launch">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="Tcmo0fSCAJQ">
+                            <img src="https://img.youtube.com/vi/Tcmo0fSCAJQ/maxresdefault.jpg" alt="Feature Release Video" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-launch">Launch</span>
+                        <h3>Feature Release Video</h3>
+                        <p>Feature announcement & campaign video</p>
+                    </div>
+                </div>
+
+                <!-- ── Social Media — Instagram ── -->
+                <a href="https://www.instagram.com/twaritanagar/" target="_blank" rel="noopener" aria-label="View Twarita Nagar Instagram profile" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-instagram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        <span class="platform-label">Instagram</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-instagram">Instagram</span>
+                        <h3>Twarita Nagar — Managed</h3>
+                        <p>Managed influencer Instagram content & growth</p>
+                        <span class="card-cta">View on Instagram →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/sunejaajay/" target="_blank" rel="noopener" aria-label="View Ajay Suneja Instagram profile" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-instagram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        <span class="platform-label">Instagram</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-instagram">Instagram</span>
+                        <h3>Ajay Suneja — Managed</h3>
+                        <p>Managed creator's Instagram content strategy</p>
+                        <span class="card-cta">View on Instagram →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/reel/DU3BRwNEhbH/" target="_blank" rel="noopener" aria-label="View Instagram brand campaign reel" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-instagram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        <span class="platform-label">Instagram Reel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-instagram">Reel</span>
+                        <h3>Brand Campaign Reel</h3>
+                        <p>Branded reel for marketing campaign</p>
+                        <span class="card-cta">View on Instagram →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/reel/DSPlcp5kmPN/" target="_blank" rel="noopener" aria-label="View Instagram marketing reel" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-instagram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        <span class="platform-label">Instagram Reel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-instagram">Reel</span>
+                        <h3>Marketing Campaign Reel</h3>
+                        <p>Marketing campaign content reel</p>
+                        <span class="card-cta">View on Instagram →</span>
+                    </div>
+                </a>
+
+                <!-- ── Social Media — Pinterest ── -->
+                <a href="https://in.pinterest.com/geeks_for_geeks/" target="_blank" rel="noopener" aria-label="View GeeksforGeeks Pinterest board" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-pinterest">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641 0 12.017 0z"/></svg>
+                        <span class="platform-label">Pinterest</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-pinterest">Pinterest</span>
+                        <h3>GeeksforGeeks Board</h3>
+                        <p>Managed GfG Pinterest presence & pins</p>
+                        <span class="card-cta">View on Pinterest →</span>
+                    </div>
+                </a>
+
+                <!-- ── Social Media — Telegram ── -->
+                <a href="https://t.me/CJSIR_Digital" target="_blank" rel="noopener" aria-label="View CJSIR Digital Telegram channel" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-telegram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span class="platform-label">Telegram</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-telegram">Telegram</span>
+                        <h3>CJSIR Digital Channel</h3>
+                        <p>Education marketing Telegram channel</p>
+                        <span class="card-cta">View on Telegram →</span>
+                    </div>
+                </a>
+
+                <a href="https://t.me/marketingin60seconds" target="_blank" rel="noopener" aria-label="View Marketing in 60 Seconds Telegram channel" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media">
+                        <img src="data/telegram_channel_marketing_in_60_sec.jpeg" alt="Marketing in 60 Seconds — Telegram Channel" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-telegram">Telegram</span>
+                        <h3>Marketing in 60 Seconds</h3>
+                        <p>Personal marketing insights channel — own brand</p>
+                        <span class="card-cta">View on Telegram →</span>
+                    </div>
+                </a>
+
+                <!-- ── Social Media — LinkedIn ── -->
+                <a href="https://www.linkedin.com/showcase/geeksforgeeks-gate-cse-da-complete-resources/posts/?feedView=all" target="_blank" rel="noopener" aria-label="View GfG GATE LinkedIn showcase page" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-linkedin">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span class="platform-label">LinkedIn</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-linkedin">LinkedIn</span>
+                        <h3>GfG GATE Showcase Page</h3>
+                        <p>LinkedIn showcase page — 13K followers organically</p>
+                        <span class="card-cta">View on LinkedIn →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/sandeep-jain-/" target="_blank" rel="noopener" aria-label="View Sandeep Jain LinkedIn profile" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-linkedin">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span class="platform-label">LinkedIn</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-linkedin">LinkedIn</span>
+                        <h3>Sandeep Jain — Profile Managed</h3>
+                        <p>Accelerated CEO profile to 6.2K+ followers</p>
+                        <span class="card-cta">View on LinkedIn →</span>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/samradhi-nagar-514323192_marketingsebrandingtak-offlinemarketing-offlineevet-activity-7403710698826018816-jf8z" target="_blank" rel="noopener" aria-label="View event management LinkedIn post" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-linkedin">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span class="platform-label">LinkedIn</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-linkedin">LinkedIn</span>
+                        <h3>Marketing Se Branding Tak</h3>
+                        <p>Event management & offline marketing showcase</p>
+                        <span class="card-cta">View on LinkedIn →</span>
+                    </div>
+                </a>
+
+                <!-- ── Social Media — Play Store ── -->
+                <a href="https://play.google.com/store/apps/details?id=com.leverageedu.leverageedu" target="_blank" rel="noopener" aria-label="View Leverage Edu app on Play Store" class="portfolio-card glass-card reveal" data-category="social">
+                    <div class="card-media platform-preview platform-playstore">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.698-2.302 2.698-2.302zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+                        <span class="platform-label">Google Play</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-playstore">App</span>
+                        <h3>Leverage Edu — App Marketing</h3>
+                        <p>Scaled app community from 10K to 60K+ active users</p>
+                        <span class="card-cta">View on Play Store →</span>
+                    </div>
+                </a>
+
+                <!-- ── Personal Brand ── -->
+                <div class="portfolio-card glass-card reveal" data-category="personal">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="b7Gn0dZKIws">
+                            <img src="https://img.youtube.com/vi/b7Gn0dZKIws/maxresdefault.jpg" alt="Building In Public" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-personal">Personal</span>
+                        <h3>On Camera — Building In Public</h3>
+                        <p>Behind the scenes of marketing work</p>
+                    </div>
+                </div>
+
+                <a href="https://www.instagram.com/reel/DU7WnRqkhZs/" target="_blank" rel="noopener" aria-label="View personal brand Instagram reel" class="portfolio-card glass-card reveal" data-category="personal">
+                    <div class="card-media platform-preview platform-instagram">
+                        <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        <span class="platform-label">Instagram Reel</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-personal">Personal</span>
+                        <h3>Personal Brand Reel</h3>
+                        <p>Building in public — personal branding content</p>
+                        <span class="card-cta">View on Instagram →</span>
+                    </div>
+                </a>
+
+                <div class="portfolio-card glass-card reveal" data-category="personal">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="JZo33ruBBDA">
+                            <img src="https://img.youtube.com/vi/JZo33ruBBDA/maxresdefault.jpg" alt="Self Work — Marketing Insights" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-personal">Personal</span>
+                        <h3>Marketing Insights — Self Work</h3>
+                        <p>Personal marketing knowledge sharing</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card glass-card reveal" data-category="personal">
+                    <div class="card-media">
+                        <div class="yt-facade" data-video-id="O2ravPU29Gw">
+                            <img src="https://img.youtube.com/vi/O2ravPU29Gw/maxresdefault.jpg" alt="Building In Public" loading="lazy">
+                            <button class="yt-play-btn" aria-label="Play video"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-badge badge-personal">Personal</span>
+                        <h3>Building In Public</h3>
+                        <p>Personal branding & behind-the-scenes</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== METRICS ====== -->
+    <section id="metrics" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge reveal">Results</span>
+                <h2 class="section-title reveal" style="--delay:.1s">Numbers That<br><span class="accent-text">Speak</span></h2>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card glass-card reveal" style="--delay:.15s">
+                    <span class="metric-number" data-target="6" data-suffix="+">0</span>
+                    <span class="metric-label">Years Experience</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.2s">
+                    <span class="metric-number" data-target="1" data-suffix="M+">0</span>
+                    <span class="metric-label">YouTube Subscribers Driven</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.25s">
+                    <span class="metric-number" data-target="60" data-suffix="K+">0</span>
+                    <span class="metric-label">App Users Grown</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.3s">
+                    <span class="metric-number" data-target="70" data-suffix="%">0</span>
+                    <span class="metric-label">CAC Reduction</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.15s">
+                    <span class="metric-number" data-target="40" data-suffix="+">0</span>
+                    <span class="metric-label">Brands Strategized</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.2s">
+                    <span class="metric-number" data-target="50" data-suffix="+">0</span>
+                    <span class="metric-label">Influencer Partners</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.25s">
+                    <span class="metric-number" data-target="30" data-suffix="+">0</span>
+                    <span class="metric-label">Events Delivered</span>
+                </div>
+                <div class="metric-card glass-card reveal" style="--delay:.3s">
+                    <span class="metric-number" data-target="200" data-suffix="K+">0</span>
+                    <span class="metric-label">Campaign Views</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge reveal">Testimonials</span>
+                <h2 class="section-title reveal" style="--delay:.1s">What People<br><span class="accent-text">Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal" style="--delay:.2s">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <p class="testimonial-text">"Working with Samradhi was like having a Swiss Army knife! Super versatile, always ready to jump in, and just made everything easier. Whether it was growing our YouTube channel or keeping projects on track, she handled it all like a pro. Super reliable, full of ideas, and genuinely fun to work with. Would team up with her again without thinking twice!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div>
+                            <span class="author-name">Aryan Sharma</span>
+                            <span class="author-role">Colleague</span>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">LinkedIn Strategy</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>LinkedIn Community Building</h3>
-                        <p>Built targeted LinkedIn presence achieving 13K followers and scaled CEO/AVP profiles to 6.2K+ and 18K followers</p>
-                        <div class="portfolio-metrics">
-                            <span>13K Followers</span>
-                            <span>Organic Growth</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">Community Growth</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Student Community Scaling</h3>
-                        <p>At Leverage Edu, scaled student community from 10K to 60K+ active users and reduced CAC by 70%</p>
-                        <div class="portfolio-metrics">
-                            <span>60K+ Users</span>
-                            <span>70% CAC Reduction</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">Influencer Marketing</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Multi-Brand Campaign Management</h3>
-                        <p>Managed 50+ influencers across multiple cities and created marketing strategies for 40+ brands including BBlunt, Kamini Sareer</p>
-                        <div class="portfolio-metrics">
-                            <span>50+ Influencers</span>
-                            <span>40+ Brands</span>
+                <div class="testimonial-card glass-card reveal" style="--delay:.3s">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
+                    <p class="testimonial-text">"Samradhi brings a rare combination of creativity and analytical thinking to the table. Whether it was brainstorming marketing strategies, managing partnerships, or handling cross-functional collaborations, she always brought her A-game and a positive attitude. What truly sets her apart is her willingness to support others and create a collaborative, motivating environment around her."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KG</div>
+                        <div>
+                            <span class="author-name">Khyati Gupta</span>
+                            <span class="author-role">Colleague</span>
                         </div>
                     </div>
                 </div>
@@ -303,75 +730,79 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="section">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Let's Create Something<br><span class="gradient-text">Extraordinary</span></h2>
-                    <p>Ready to scale your digital presence? Let's discuss how I can help grow your brand with proven strategies that delivered 62K+ subscribers and 13K+ followers organically.</p>
+            <div class="section-header">
+                <span class="section-badge reveal">Get In Touch</span>
+                <h2 class="section-title reveal" style="--delay:.1s">Let's Create Something<br><span class="accent-text">Extraordinary</span></h2>
+                <p class="section-subtitle reveal" style="--delay:.15s">Ready to scale your digital presence? Let's discuss how I can help grow your brand.</p>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info reveal" style="--delay:.2s">
                     <div class="contact-methods">
-                        <a href="mailto:Samradhingr@gmail.com" class="contact-method">
-                            <span class="method-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </span>
-                            <span>Samradhingr@gmail.com</span>
+                        <a href="mailto:samradhingr@gmail.com" class="contact-method glass-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <span class="method-value">samradhingr@gmail.com</span>
+                            </div>
                         </a>
-                        <a href="tel:+917087451924" class="contact-method">
-                            <span class="method-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                </svg>
-                            </span>
-                            <span>+91-7087451924</span>
+                        <a href="tel:+971582761576" class="contact-method glass-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <div>
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+971-582761576</span>
+                            </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/samradhi-nagar-514323192" class="contact-method">
-                            <span class="method-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" r="2"/>
-                                </svg>
-                            </span>
-                            <span>LinkedIn Profile</span>
+                        <a href="https://www.linkedin.com/in/samradhi-nagar-514323192" target="_blank" rel="noopener" class="contact-method glass-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <div>
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">Connect on LinkedIn</span>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form class="form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Company">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Tell me about your project" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
-                </div>
+                <form class="contact-form glass-card reveal" style="--delay:.25s" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name" placeholder=" " required>
+                        <label class="form-label" for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email" placeholder=" " required>
+                        <label class="form-label" for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="company" placeholder=" ">
+                        <label class="form-label" for="company">Company</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" id="message" placeholder=" " rows="4" required></textarea>
+                        <label class="form-label" for="message">Tell me about your project</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9 22,2"/></svg>
+                    </button>
+                    <div class="form-success" id="form-success">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+                        Message sent successfully!
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <span class="footer-logo">SAMRIDHI NAGAR</span>
-                    <span class="footer-tagline">Marketing Executive</span>
-                </div>
-                <div class="footer-right">
-                    <span>&copy; 2024 Samridhi Nagar. All rights reserved.</span>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">Samridhi Nagar</span>
+                <span class="footer-tagline">Marketing Professional — Abu Dhabi, UAE</span>
+            </div>
+            <div class="footer-right">
+                <span>&copy; 2026 Samridhi Nagar</span>
             </div>
         </div>
     </footer>
