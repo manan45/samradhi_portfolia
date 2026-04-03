@@ -155,12 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show success message if redirected back after native Netlify form submission
     if (new URLSearchParams(window.location.search).get('submitted') === '1') {
-        if (formSuccess) {
-            formSuccess.classList.add('show');
-            setTimeout(() => formSuccess.classList.remove('show'), 5000);
-        }
-        // Clean the URL without reload
-        history.replaceState(null, '', window.location.pathname + '#contact');
+        history.replaceState(null, '', window.location.pathname);
+        setTimeout(() => {
+            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            if (formSuccess) {
+                formSuccess.classList.add('show');
+                setTimeout(() => formSuccess.classList.remove('show'), 5000);
+            }
+        }, 100);
     }
 
 });
