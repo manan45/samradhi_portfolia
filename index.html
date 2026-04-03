@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samradhi Nagar — Marketing Professional</title>
     <meta name="description" content="Marketing professional with 6 years of experience in Social Media Management, Digital Marketing, and Strategic Campaign Execution based in Abu Dhabi, UAE.">
+    <link rel="canonical" href="https://samradhinagar.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -764,21 +765,23 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form glass-card reveal" style="--delay:.25s" id="contact-form">
+                <form class="contact-form glass-card reveal" style="--delay:.25s" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden" style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <div class="form-group">
-                        <input type="text" class="form-input" id="name" placeholder=" " required>
+                        <input type="text" class="form-input" id="name" name="name" placeholder=" " required>
                         <label class="form-label" for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-input" id="email" placeholder=" " required>
+                        <input type="email" class="form-input" id="email" name="email" placeholder=" " required>
                         <label class="form-label" for="email">Email Address</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-input" id="company" placeholder=" ">
+                        <input type="text" class="form-input" id="company" name="company" placeholder=" ">
                         <label class="form-label" for="company">Company</label>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-input form-textarea" id="message" placeholder=" " rows="4" required></textarea>
+                        <textarea class="form-input form-textarea" id="message" name="message" placeholder=" " rows="4" required></textarea>
                         <label class="form-label" for="message">Tell me about your project</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
