@@ -153,38 +153,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     const formSuccess = document.getElementById('form-success');
 
-    const sendBtnSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9 22,2"/></svg>';
-
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = form.querySelector('button[type="submit"]');
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-
-            const formData = new FormData(form);
-
-            fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
-            })
-            .then(res => {
-                if (!res.ok) throw new Error('Network error');
-                form.reset();
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Message ' + sendBtnSVG;
-                if (formSuccess) {
-                    formSuccess.classList.add('show');
-                    setTimeout(() => formSuccess.classList.remove('show'), 4000);
-                }
-            })
-            .catch(() => {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Message ' + sendBtnSVG;
-                alert('Something went wrong. Please try again or email directly.');
-            });
-        });
+    // Show success message if redirected back after native Netlify form submission
+    if (new URLSearchParams(window.location.search).get('submitted') === '1') {
+        if (formSuccess) {
+            formSuccess.classList.add('show');
+            setTimeout(() => formSuccess.classList.remove('show'), 5000);
+        }
+        // Clean the URL without reload
+        history.replaceState(null, '', window.location.pathname + '#contact');
     }
 
 });
