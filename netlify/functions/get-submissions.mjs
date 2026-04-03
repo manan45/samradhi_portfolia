@@ -25,7 +25,3 @@ export default async (req, context) => {
         headers: { "Content-Type": "application/json" }
     });
 };
-
-export const config = {
-    path: "/.netlify/functions/get-submissions"
-};

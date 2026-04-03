@@ -19,6 +19,9 @@
   ],
   "author": "Samridhi Nagar <Samradhingr@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "@netlify/blobs": "^8.0.0"
+  },
   "homepage": "https://samridhi-nagar-portfolio.netlify.app",
   "repository": {
     "type": "git",

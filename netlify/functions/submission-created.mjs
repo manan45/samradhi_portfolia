@@ -20,7 +20,3 @@ export default async (req, context) => {
 
     return new Response(JSON.stringify({ stored: true }), { status: 200 });
 };
-
-export const config = {
-    path: "/.netlify/functions/submission-created"
-};
